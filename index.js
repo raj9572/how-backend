@@ -17,7 +17,7 @@ const port = process.env.PORT || 4000
 
 app.use(express.json())
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://how-landing-page.vercel.app",
     credentials:true
 }))
 
@@ -57,6 +57,9 @@ app.get("/api",(req,res)=>{
     res.json({status:true,message:"data is coming"})
 })
 
+app.get("/",(req,res) =>{
+    return res.send("data is coming")
+})
 
 const startServer = async() =>{
 
