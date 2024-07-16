@@ -53,7 +53,7 @@ app.post('/api/users/create-user', async(req, res) => {
    }
 })
 
-app.get("/",(req,res)=>{
+app.get("/api",(req,res)=>{
     res.json({status:true,message:"data is coming"})
 })
 
